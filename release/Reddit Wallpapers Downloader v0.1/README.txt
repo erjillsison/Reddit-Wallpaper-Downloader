@@ -47,6 +47,7 @@ NOTES:
 UNINSTALL:
 	-run scheduler.exe to delete create task
 	-delete all files normally
+	
 ABOUT:
 	-Built using python language
 	-Packaged using Pyinstaller module to a windows exe file
