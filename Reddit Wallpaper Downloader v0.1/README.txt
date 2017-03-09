@@ -14,17 +14,12 @@ HOW IT WORKS:
 		wait until number of files in wallpapers folder match the required number(default:10)
 		
 		-Automatically creates config.txt, links.txt and wallpapers folder
-		-Downloads images (subreddits downloaded from and number of files downloaded is set in config.txt)
-		-The list of file paths is saved in links.txt (DO NOT EDIT THIS)
-		
-		-Sets the wallpaper according to the first entry in links.txt
-		-Deletes the entry from links.txt
-		
+		-Downloads images (subreddits downloaded from and number of files downloaded is set in config.txt)		
+		-Sets the desktop background from one of the downloaded images
 
 	Subsequest runs:		
-		-Sets the wallpaper according to the first entry in links.txt
-		-Deletes the entry from links.txt
-		-Once the links.txt has ran out of paths, redo the first run sequence(download..)
+		-Cycles through the images download to set as desktop background
+		-Once all images have been used, redo the first run sequence(redownload..)
 	
 TASK SCHEDULING:
 	The app uses Windows Task Scheduler to run automatically in given intervals
@@ -42,8 +37,9 @@ CONFIG:
 NOTES:
 	-ONLY DOWNLOADS:
 		-from submissions with the image dimensions in the post title e.g "something [1920x1080]"(for speed)
-		-if said dimension is bigger than 1920x1080
+		-if said dimension is same as or greater than 1920x1080
 		-if aspect ratio is bigger than 1.6 or less than 1.9
+		
 UNINSTALL:
 	-run scheduler.exe to delete create task
 	-delete all files normally
