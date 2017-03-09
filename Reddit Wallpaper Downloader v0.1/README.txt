@@ -1,5 +1,10 @@
 REDDIT WALLPAPER DOWNLOADER by erjill sison
 
+Download:
+	-Click Clone or download on the top right of the GitHub page https://github.com/erjillsison/Reddit-Wallpaper-Downloader
+	-Download ZIP
+	-Extract and run rwd.exe from Reddit Wallpaper Downloader folder
+
 SUMMARY:
 	-No Console/GUI
 	-Downloads wallpapers or any images from subreddits in reddit.com (see CONFIG:)
@@ -14,19 +19,16 @@ HOW IT WORKS:
 		wait until number of files in wallpapers folder match the required number(default:10)
 		
 		-Automatically creates config.txt, links.txt and wallpapers folder
-		-Downloads images (subreddits downloaded from and number of files downloaded is set in config.txt)		
+		-Downloads 10 images by default		
 		-Sets the desktop background from one of the downloaded images
 
 	Subsequest runs:		
 		-Cycles through the images download to set as desktop background
-		-Once all images have been used, redo the first run sequence(redownload..)
+		-Once all images have been used, images will be deleted and a new set will be downloaded
 	
 TASK SCHEDULING:
-	The app uses Windows Task Scheduler to run automatically in given intervals
-	To enable this: 
-		-Can be done manually by using the Windows Task Scheduler app
-		-or use the scheduler.exe included and follow the steps given by the prompt
-
+	-Run scheduler.exe and follow prompt
+	-This creates a task schedule using Windows Task Scheduler
 	
 CONFIG:
 	-Edit config.txt to add more subreddits(under 'subreddits' key separated by a '+')
@@ -41,7 +43,7 @@ NOTES:
 		-if aspect ratio is bigger than 1.6 or less than 1.9
 		
 UNINSTALL:
-	-run scheduler.exe to delete create task
+	-run scheduler.exe to delete created task
 	-delete all files normally
 	
 ABOUT:
